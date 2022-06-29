@@ -1,4 +1,4 @@
-alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 // Retorna a posição de uma letra no alfabeto
 function alphabetIndex(char) {
@@ -78,7 +78,3 @@ function decode(phrase, keys) {
 
     return decodedStr;
 }
-
-let x = encode("Eae colega, ta dificil descriptografar ae?", [7, 5, 1, -4, 10])
-console.log(x)
-console.log(decode(x, [7, 5, 1, -4, 10]))
