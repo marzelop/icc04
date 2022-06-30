@@ -12,19 +12,21 @@
         <h1>MKP Cryptography</h1>
     </header>
     <main>
+        <div id="keys-container">
+            <label id="klabel"><abbr title="Separe as chaves com &quot;,&quot;"><u>Keys</u></abbr>:<input type="text" name="keys" id="keys"></label>
+        </div>
         <div id="encoding">
-            <label>Decoded Text:<br><textarea type="text" name="og-text" id="og-text" class="text-input"  onkeyup="if (this.scrollHeight > this.clientHeight) this.style.height = this.scrollHeight + 'px';"></textarea></label>
+            <label>Decoded Text:<br><textarea type="text" name="og-text" id="og-text" class="text-input"></textarea></label><br>
+            <input type="button" value="Encode">
         </div>
         <div id="decoding">
-            <label>Encoded Text:<input type="text" name="encoded-text" id="encoded-text" class="text-input"></label>
+            <label>Encoded Text:<br><textarea type="text" name="encoded-text" id="encoded-text" class="text-input"></textarea></label><br>
+            <input type="button" value="Decode">
         </div>
     </main>
     <footer>
-
     </footer>
 </body>
 <script>
-    var textInputs = document.getElementsByClassName("text-input");
-    textInputs.on
 </script>
 </html>

@@ -14,6 +14,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: url("https://c.tenor.com/yheo1GGu3FwAAAAM/rick-roll-rick-ashley.gif");
 }
 
 header {
@@ -45,14 +46,29 @@ main div {
     margin: 20px;
 }
 
+#klabel {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+#keys-container {
+    margin: 0 20px;
+}
+
 main div label {
     font-size: 1.2em;
 }
 
 .text-input {
-    width: 90%;
-    min-height: 100px;
-    max-height: 300px;
+    width: 100%;
+    min-height: 200px;
+    max-height: 600px;
     resize: vertical;
-    overflow: ;
+    overflow: hidden;
+    border: solid darkgreen 3px;
+    padding: 0 5px;
 }
