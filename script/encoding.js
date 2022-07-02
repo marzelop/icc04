@@ -36,6 +36,7 @@ function encode(phrase, keys) {
             if ((i + 1) % j === 0)
                 offset += key;
         }
+
         if (lettercase)
             encodedStr += alphabet[(charIndex + offset + alphabet.length) % alphabet.length];
         else

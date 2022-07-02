@@ -16,17 +16,17 @@
             <label id="klabel"><abbr title="Separe as chaves com &quot;,&quot;"><u>Keys</u></abbr>:<input type="text" name="keys" id="keys"></label>
         </div>
         <div id="encoding">
-            <label>Decoded Text:<br><textarea type="text" name="og-text" id="og-text" class="text-input"></textarea></label><br>
-            <input type="button" value="Encode">
+            <label>Decoded Text:<br><div contenteditable="" id="og-text" class="text-input" placeholder="Insert text here to encode"></div></label><br>
+            <input type="button" value="Encode" onclick="showEncrypt()">
         </div>
         <div id="decoding">
-            <label>Encoded Text:<br><textarea type="text" name="encoded-text" id="encoded-text" class="text-input"></textarea></label><br>
-            <input type="button" value="Decode">
+            <label>Encoded Text:<br><div contenteditable="" id="encoded-text" class="text-input" placeholder="Insert text here to deccode"></div></label><br>
+            <input type="button" value="Decode" onclick="showDecrypt()">
         </div>
     </main>
     <footer>
     </footer>
 </body>
-<script>
-</script>
+<script type="text/javascript" src="script/encoding.js"></script>
+<script type="text/javascript" src="script/textinput.js"></script>
 </html>
