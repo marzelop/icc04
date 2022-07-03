@@ -33,8 +33,6 @@ function showDecrypt() {
     let keys = getKeys();
     if (keys === 0) return 0;
     let input = encodedText.innerText, output;
-    // if (input === "jasga://vjy.avzkwfg.bvo/ehstj?x=cXe4y9VdZgS")
-        //rickroll();
     
     output = decode(input, keys);
     if (output.substring(0, 8) === "https://")
@@ -44,6 +42,5 @@ function showDecrypt() {
 }
 
 function rickroll() {
-    console.log("uepa")
     document.body.style.backgroundImage = 'url("https://c.tenor.com/yheo1GGu3FwAAAAM/rick-roll-rick-ashley.gif")';
 }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICC-04</title>
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+    <header>
+        <h1>???</h1>
+    </header>
+    <main>
+        <div id="keys-container">
+            <label id="klabel"><u>Key</u>:<input type="number" name="keys" id="keys"></label>
+        </div>
+        <div id="encoding">
+            <label>Decoded Text:<br><div contenteditable="" id="og-text" class="text-input" placeholder="Insert text here to encode"></div></label><br>
+            <input type="button" value="Encode" onclick="showEncrypt()">
+        </div>
+        <div id="decoding">
+            <label>Encoded Text:<br><div contenteditable="" id="encoded-text" class="text-input" placeholder="Insert text here to deccode"></div></label><br>
+            <input type="button" value="Decode" onclick="showDecrypt()">
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+<script type="text/javascript" src="script/encoding_extra.js"></script>
+<script type="text/javascript" src="script/textinput_extra.js"></script>
+</html>
