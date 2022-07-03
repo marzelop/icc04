@@ -33,17 +33,17 @@ function showDecrypt() {
     let keys = getKeys();
     if (keys === 0) return 0;
     let input = encodedText.innerText, output;
-    if (input === "jasga://vjy.avzkwfg.bvo/ehstj?x=cXe4y9VdZgS" && keys === [2, 5, -3, 10, 6])
-        rickroll();
+    // if (input === "jasga://vjy.avzkwfg.bvo/ehstj?x=cXe4y9VdZgS")
+        //rickroll();
     
     output = decode(input, keys);
-    console.log(output.substring(0, 8))
     if (output.substring(0, 8) === "https://")
-        ogText.innerHTML = `<a href="${output}" contentEditable="false" target="_blank">${output}</a>`;
+        ogText.innerHTML = `<a href="${output}" contentEditable="false" target="_blank" onclick="rickroll()">${output}</a>`;
     else ogText.innerText = output;
 
 }
 
 function rickroll() {
-    // document.body.style.backgroundImage = 'url("https://c.tenor.com/yheo1GGu3FwAAAAM/rick-roll-rick-ashley.gif")';
+    console.log("uepa")
+    document.body.style.backgroundImage = 'url("https://c.tenor.com/yheo1GGu3FwAAAAM/rick-roll-rick-ashley.gif")';
 }
